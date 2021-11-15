@@ -39,8 +39,8 @@ return new Promise(resolve => setTimeout(resolve, ms))
 }
 require('./giie.js')
 nocache('./giie.js', module => console.log(color('[WATCH]', 'yellow'), color(`'${module}'`, 'cyan'), 'File is updated!'))
-require('./message/group.js')
-nocache('./message/group.js', module => console.log(color('[WATCH]', 'yellow'), color(`'${module}'`, 'yellow'), 'File is updated!'))
+require('./group.js')
+nocache('./group.js', module => console.log(color('[WATCH]', 'yellow'), color(`'${module}'`, 'yellow'), 'File is updated!'))
 
 async function starts() {
 giie.autoReconnect = ReconnectMode.onConnectionLost
