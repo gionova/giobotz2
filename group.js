@@ -4,8 +4,8 @@ const {
 const fs = require("fs-extra")
 const moment = require("moment-timezone")
 
-const { getBuffer } = require('../lib/myfunc')
-const { color, bgcolor } = require('../lib/color')
+const { getBuffer } = require('./lib/myfunc')
+const { color, bgcolor } = require('./lib/color')
 
 let setting = JSON.parse(fs.readFileSync('./settings.json'))
 prefix = setting.prefix
